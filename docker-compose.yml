@@ -1,8 +1,8 @@
 version: "2.0"
 services:
   spacedeck:
-    build: .
-    container_name: spacedeck
+    image: kroschu/whiteboard-arm:latest
+    restart: always
     ports:
       - "9666:9666"
     volumes:
